@@ -1,12 +1,17 @@
 #! /bin/bash
 
 # FOR ARCH USE THIS
-#cd
-#git clone https://aur.archlinux.org/yay.git > /dev/null
-#cd yay/
-#makepkg -sir
-#cd
-#sudo pacman -S base-devel picom feh make > /dev/null
+echo "[+] Downloading stuff"
+cd
+echo "[#####             ] 25%"
+git clone https://aur.archlinux.org/yay.git > /dev/null
+cd yay/
+echo "[##########        ] 50%"
+makepkg -sir
+cd
+echo "[###############   ] 75%"
+sudo pacman -S base-devel picom feh make
+echo "[##################] 100%"
 
 
 # FOR DEBIAN USE THIS
